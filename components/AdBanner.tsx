@@ -1,6 +1,12 @@
 "use client";
 import { useEffect } from "react";
 
+declare global {
+  interface Window {
+    adsbygoogle: unknown[];
+  }
+}
+
 export default function AdBanner() {
   useEffect(() => {
     try {
